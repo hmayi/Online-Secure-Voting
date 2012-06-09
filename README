@@ -1,3 +1,17 @@
-•  Secure election protocol implementation: As part of course project I implemented secure election protocol for a 
-   secured way for people to vote online.  
+ As part of course project I implemented secure election protocol for a secured way for people to vote online using two central facilities.
+ Desciption for the project:
+
+ Voting with two central facilities
+
+1. The CLA certifies the voters:
+	Each voter sends a message to the CLA asking for a validation number 
+	The CLA returns a random validation number and maintains a list of validation numbers and the corresponding recipients.
+	The CLA sends the list of validation numbers to the CTF. 
+
+2. The CTF counts the votes:
+	The voters sends their vote to the CTF.
+	The CTF checks the voters validation numbers against the list received from the CLA: if the validation number is valid then the vote is counted and the validation number disabled (to prevent multiple votes from the same voter).
+	After all the votes are entered, the CTF publish the election results. 
+
+ 
   
